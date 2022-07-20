@@ -27,6 +27,13 @@ body {
     width: 531px;
     height: 460px;
 }
+/* adding ellipsis to the paragraph */
+.left-header-info p{
+    width: 91%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
 h1 {
     color: #FFFFFF;
@@ -36,11 +43,14 @@ h1 {
 }
 
 .paragraph-info {
+    overflow: hidden;
     font-weight: 400;
     font-size: 16px;
     color: #FFFFFF;
     margin: 20px 0px 30px 0px;
 }
+
+
 
 .btn-style {
     text-decoration: none;
@@ -174,7 +184,13 @@ h3 {
     margin: 0px 10px 0px 0px;
 
 }
-
+/* View All button for tablet mode*/
+.view-All-btn{
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+/* footer start */
 h2 {
     color: #FFFFFF;
     font-weight: 600;
@@ -236,7 +252,9 @@ hr {
     .left-header-info, .right-header-info {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    .navigation {
+        background-color: #FFFFFF;
+    }
 
     .main-body {
         width: 100%;
@@ -249,6 +267,7 @@ hr {
 
     .nav-btn-style {
         flex-direction: column;
+        border: 2px solid lightgray;
         background-color: #FFFFFF;
 
     }
@@ -264,7 +283,6 @@ hr {
 
 
     }
-
     .footer-box {
         margin-left: 30%;
         width: 100%;
@@ -350,6 +368,11 @@ hr {
         display: flex;
         margin-left: 150%;
         
+    }
+    .view-All-btn{
+        margin: 20% 0% -20% 60%;
+
+        visibility: visible;
     }
   
 }
