@@ -1,0 +1,362 @@
+/* Fonts poppins imported */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Island+Moments&family=Playfair+Display:wght@700&family=Poppins:wght@400;500&family=Splash&family=The+Nautigal:wght@700&display=swap');
+
+/* Adding default font as poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+
+/* ----------------------
+--Header-Section-Design--
+------------------------- */
+
+.header-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1321px;
+    height: 616px;
+    margin: 50px 0px 0px 250px; /* top | right | bottom | left */
+    border-radius: 30px;
+    background-color: #161616;
+}
+
+/* designing left information in header */
+.left-header-info {
+    width: 531px;
+    height: 460px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 70px;
+    margin: 0px 0px 0px 0px;
+}
+
+.paragraph-info {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 20px 0px 30px 0px;
+}
+
+.btn-style {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    background-color: #DD0000;
+    padding: 16px 25px;
+    border-radius: 5px;
+}
+.btn-style:hover{
+    background-color: orange;
+    border-radius: 20px;
+    transition: 1s;
+}
+/* designing right information in header */
+.right-header-info {
+    width: 581px;
+    height: 613px;
+    margin: 0px 0px 0px 0px;
+}
+.right-header-info img {
+    width: 581px;
+    height: 613px;
+}
+/* End of header section */
+
+/* ----------
+---Main body---
+------------- */
+.main-body {
+    display: flex;
+    width: 1321px;
+    height: 1150px;
+    margin: 50px 0px 0px 250px;
+    /* top | right | bottom | left */
+    border-radius: 30px;
+    /* background-color: #c9bfff; */
+    background-color: #FFFFFF;
+
+}
+
+/* left nav design start */
+.navigation {
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+.btn-box {
+    width: 252px;
+    height: 252px;
+    margin: 30px;
+}
+
+.nav-btn-style {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-decoration: none;
+    color: #161616;
+    width: 252px;
+    height: 64px;
+    margin: 30px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* left nav design end */
+
+/* right content design start */
+.right-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 26px;
+
+    /* border: 3px solid crimson; */
+    width: 990px;
+    height: 1133px;
+    margin-left: 15px;
+
+}
+
+h4 {
+    border: 1px solid #161616;
+    width: 100px;
+    height: 32;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+h3 {
+    width: 272px;
+    height: 54px;
+    font-size: 18px;
+}
+
+.blog-container {
+    width: 312px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    background-color: #FFFFFF;
+
+}
+
+.blog-detail-box {
+    margin: 10px;
+    height: 155px;
+}
+
+.icons-alignment {
+    display: flex;
+}
+
+.icons-alignment img {
+    width: 24px;
+    height: 24px;
+}
+
+.icons-alignment p {
+    margin: 0px 10px 0px 0px;
+
+}
+
+h2 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
+hr {
+    width: 75%;
+    color: lightgray;
+}
+
+.footer-box {
+
+    margin-top: 30px;
+    width: 1660px;
+    height: 200px;
+    background-color: #161616;
+    text-align: center;
+}
+
+.info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info a {
+    text-decoration: none;
+    color: lightgray;
+
+}
+
+/* footer end */
+
+/* icon styling */
+.fa-brands{
+    color: beige;
+    width: 40px;
+    font-size: 25px;
+}
+
+
+
+/*
+-------------
+ Media Queries For responsiveness
+----------------
+ */
+
+/* for mobile */
+@media only screen and (max-width:688px) {
+    .header-style {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .left-header-info, .right-header-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .main-body {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .nav-btn-style {
+        flex-direction: column;
+        background-color: #FFFFFF;
+
+    }
+
+    .right-content {
+        margin-left: 70px;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .footer-box {
+        margin-left: 30%;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        flex-direction: column;
+
+    }
+
+}
+
+/* For Tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+
+    .header-style {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 10%;
+        justify-content: space-around;
+    }
+
+    .btn-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .nav-btn-style {
+
+        border: 3px solid lightgrey;
+
+    }
+
+    .main-body {
+        margin-top: 10%;
+    }
+
+    .navigation {
+        background-color: #FFFFFF;
+    }
+
+    .right-content {
+        margin-top: 15%;
+        margin-right: 40%;
+        margin-left: -15%;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+
+    }
+
+    .hide-grid {
+        display: none;
+    }
+
+    .footer-box {
+        margin-left: 30%;
+        margin-top: 30%;
+
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        margin-top: 20%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+
+    }
+
+    .middle {
+        display: flex;
+        margin-left: 150%;
+        
+    }
+  
+}
+
+
+
+
+
+
+
